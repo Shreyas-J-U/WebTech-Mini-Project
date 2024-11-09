@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Search</h1>
+        
+        <!-- Search input and button -->
+        <input type="text" id="searchInput" placeholder="Search for products...">
+        <button id="searchButton">Search</button>
+
+        <!-- Rating filter dropdown -->
+        <label for="ratingFilter">Minimum Rating:</label>
+        <select id="ratingFilter">
+            <option value="0">Any</option>
+            <option value="1">1 star</option>
+            <option value="2">2 stars</option>
+            <option value="3">3 stars</option>
+            <option value="4">4 stars</option>
+            <option value="5">5 stars</option>
+        </select>
+
+        <!-- Product list section -->
+        <div id="productList"></div>
+    </div>
+
+    <!-- Modal to show product details -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalProductTitle"></h2>
+            <img id="modalProductImage" src="" alt="Product Image">
+            <p><strong>Price:</strong> <span id="modalProductPrice"></span></p>
+            <p><strong>Rating:</strong> <span id="modalProductRating"></span></p>
+            <p><strong>Description:</strong> <span id="modalProductDescription"></span></p>
+            <a id="modalProductLink" href="" target="_blank">View on source website</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
